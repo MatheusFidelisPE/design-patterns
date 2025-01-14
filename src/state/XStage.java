@@ -1,6 +1,6 @@
 package state;
 
-public class Desligado implements Estado {
+public class XStage implements Estado {
     @Override
     public void pressPlayBotton(TocadorMusica tocadorMusica) {
         System.out.println("-==-NADA ACONTECE-==-");
@@ -13,17 +13,12 @@ public class Desligado implements Estado {
 
     @Override
     public void pressPowerBotton(TocadorMusica tocadorMusica) {
-        System.out.println("Ligando o tocador...");
-        tocadorMusica.changeState(new Ligado());
+        System.out.println("-==-NADA ACONTECE-==-");
     }
 
 //    @Override
 //    public void pressXAction(TocadorMusica tocadorMusica) {
-//        System.out.println("Tocando música");
-//        tocadorMusica.changeState(new XStage());
+//        System.out.println("Executando ação X...");
+//        tocadorMusica.changeState(new Desligado());
 //    }
-
-    public String toString(){
-        return "Desligado";
-    }
 }

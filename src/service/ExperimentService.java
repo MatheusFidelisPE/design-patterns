@@ -5,6 +5,7 @@ import abstractFactory.ModernFactory;
 import builder.Sandwich;
 import decorator.*;
 import state.TocadorMusica;
+import without_state.Multimidia;
 
 public class ExperimentService {
 
@@ -56,4 +57,22 @@ public class ExperimentService {
 
     }
 
+    public static void WithoutStatePattern(){
+        Multimidia multimidia = new Multimidia();
+//        Botões -> 0 = play, 1 = stop, 2 = power
+        multimidia.clickBooton(0);
+        multimidia.clickBooton(1);
+        multimidia.clickBooton(2);
+        multimidia.clickBooton(0);
+        multimidia.clickBooton(1);
+        multimidia.clickBooton(0);
+        multimidia.clickBooton(2);
+        multimidia.clickBooton(2);
+        multimidia.clickBooton(0);
+        multimidia.clickBooton(1);
+        multimidia.clickBooton(2);
+
+
+
+    }
 }

@@ -10,7 +10,8 @@ public class Main {
 //        ExperimentService.abstractFactoryExperiment();
 //        ExperimentService.builderExperiment();
         ExperimentService.stateExperiment();
-
+        System.out.println("-------------------------------------------------");
+        ExperimentService.WithoutStatePattern();
 //        ExperimentService.DecoratorExperiment();
 
 

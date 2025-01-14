@@ -15,6 +15,13 @@ public class MusicaTocando implements Estado {
         System.out.println("Desligando tocador de música...");
         tocadorMusica.changeState(new Desligado());
     }
+
+//    @Override
+//    public void pressXAction(TocadorMusica tocadorMusica) {
+//        System.out.println("Tocar 10 minutos de música sem parar...");
+//        tocadorMusica.changeState(new XStage());
+//    }
+
     public String toString(){
         return "Musica Tocando";
     }

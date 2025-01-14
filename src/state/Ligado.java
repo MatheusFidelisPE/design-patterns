@@ -17,6 +17,13 @@ public class Ligado implements Estado {
         System.out.println("Turning off");
         tocadorMusica.changeState(new Desligado());
     }
+
+//    @Override
+//    public void pressXAction(TocadorMusica tocadorMusica) {
+//        System.out.println("Tocar 10 minutos de música sem parar...");
+//        tocadorMusica.changeState(new XStage());
+//    }
+
     public String toString(){
         return "Ligado";
     }
